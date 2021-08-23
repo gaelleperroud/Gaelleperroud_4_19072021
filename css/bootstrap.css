@@ -1427,7 +1427,8 @@ figure {
 }
 
 img {
-    vertical-align: middle
+    vertical-align: middle;
+    max-width: 100%
 }
 
 .carousel-inner>.item>a>img,
@@ -4248,9 +4249,7 @@ input[type=submit].btn-block {
     opacity: 1
 }
 
-.collapse {
-    display: none
-}
+
 
 .collapse.in {
     display: block
@@ -4373,7 +4372,6 @@ tbody.collapse.in {
     cursor: not-allowed;
     background-color: transparent;
     background-image: none;
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false)
 }
 
 .open>.dropdown-menu {
@@ -5124,7 +5122,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     max-height: 340px
 }
 
-@media (max-device-width:480px) and (orientation:landscape) {
+@media (max-width:480px) and (orientation:landscape) {
     .navbar-fixed-bottom .navbar-collapse,
     .navbar-fixed-top .navbar-collapse {
         max-height: 200px
